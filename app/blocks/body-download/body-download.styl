@@ -1,0 +1,127 @@
+.body-download
+	position relative
+	display flex
+	text-decoration none
+	cursor pointer
+	justify-content space-between
+
+	&__span
+		position relative
+		display block
+		text-align right
+		text-transform uppercase
+		color #6f498c
+
+	&__h4-download
+		position relative
+		text-align right
+		color #6f498c
+
+	&__download-img
+		position relative
+		padding-bottom 188.888888888%
+		height 0
+		background-repeat no-repeat
+		background-position 0 0
+		background-size contain
+		retinaBackground(pdf-default, $ext = 'png')
+
+.body-download:hover
+	.body-download__h4-download
+		color #a52615
+
+.body-download:hover
+	.body-download__download-img
+		retinaBackground(pdf-hover, $ext = 'png')
+
+@media only screen and (max-width: 959px)
+	.body-download
+		padding-bottom 5.98972749%
+		width auto
+		border-bottom .4vw solid #a1906d
+
+		&__wrapp-text
+			width 89%
+
+		&__download
+			width 11%
+
+		&__download-img
+			left 7%
+
+		&__span
+			position absolute
+			top 26%
+			right 13%
+			font 3.4vw FuturaBookCyr, 'Arial'
+
+		&__h4-download
+			position absolute
+			top 35%
+			right 13.2%
+			font 7.0vw FuturaBookCyr, 'Arial'
+
+@media only screen and (min-width: 960px)
+	.body-download
+		left 7px
+		width 36%
+
+		&__wrapp-text
+			width 90%
+
+		&__download
+			width 30px
+
+		&__span
+			top 20px
+			right 8px
+			font 9.56px FuturaBookCyr, 'Arial'
+
+		&__h4-download
+			top 13px
+			right 6px
+			font 27.44px FuturaBookCyr, 'Arial'
+
+@media only screen and (min-width: 1280px)
+	.body-download
+		left -18px
+		width 36%
+
+		&__wrapp-text
+			width 90%
+
+		&__download
+			width 32px
+
+		&__span
+			top 20px
+			right 4px
+			font 10.11px FuturaBookCyr, 'Arial'
+			letter-spacing .3px
+
+		&__h4-download
+			top 13px
+			right 1px
+			font 29.01px FuturaBookCyr, 'Arial'
+
+@media only screen and (min-width: 1920px)
+	.body-download
+		left -6px
+		width 36%
+
+		&__wrapp-text
+			width 90%
+
+		&__download
+			width 41px
+
+		&__span
+			top 26px
+			right 2px
+			font 12.97px FuturaBookCyr, 'Arial'
+			letter-spacing .3px
+
+		&__h4-download
+			top 18px
+			right -1px
+			font 37.21px FuturaBookCyr, 'Arial'

@@ -1,0 +1,8 @@
+mixin body-serveice()
+	+b.body-serveice&attributes(attributes)
+		block
+
+		+e('div').line
+		+e('div').wrapp-text
+			+e('a').mail&attributes({'href': 'mailto:service@humaninterface.pro', 'target': '_self'}) service@humaninterface.pro
+			+e('a').tell&attributes({'href': 'tel:+79263148330', 'target': '_self'}) +7 (926) 314 83 30

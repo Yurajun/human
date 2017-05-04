@@ -1,0 +1,81 @@
+.header-logo
+	position relative
+	display block
+
+	&__text-p
+		position relative
+		text-align right
+		text-transform uppercase
+		color #010101
+
+	&__logo
+		position relative
+		padding-bottom 21.227197%
+		height 0
+		text-indent -1000em
+		background-repeat no-repeat
+		background-position 0 0
+		background-size contain
+		retinaBackground(logotip, $ext = 'png')
+
+@media only screen and (max-width: 959px)
+	.header-logo
+		padding-right 11.7%
+		padding-left 12%
+		padding-bottom 5.278927093%
+		border-bottom .4vw solid #a1906d
+
+		&__text-p
+			left -4px
+			font 3vw FuturaLightCyr, 'Arial'
+			text-align center
+			letter-spacing .4px
+
+		&__logo
+			top -5px
+			left -5px
+
+
+@media only screen and (min-width: 960px)
+	.header-logo
+		display block
+		width 37%
+
+		&__text-p
+			top 41px
+			right 13px
+			font 13.64px FuturaLightCyr, 'Arial'
+
+		&__logo
+			top 39px
+			left 12px
+
+@media only screen and (min-width: 1280px)
+	.header-logo
+		display block
+		width 34%
+
+		&__text-p
+			top 44px
+			right 34px
+			font 15.94px FuturaLightCyr, 'Arial'
+			letter-spacing .2px
+
+		&__logo
+			top 41px
+			left -10px
+
+@media only screen and (min-width: 1920px)
+	.header-logo
+		display block
+		width 32.5%
+
+		&__text-p
+			top 62px
+			right 26px
+			font 20.44px FuturaLightCyr, 'Arial'
+			letter-spacing .2px
+
+		&__logo
+			top 59px
+			left 8px

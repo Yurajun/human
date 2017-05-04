@@ -1,0 +1,13 @@
+include /blocks/h1-site/h1-site
+include /blocks/h2-app/h2-app
+include /blocks/h3-prototype/h3-prototype
+
+mixin header-title()
+	+b.header-title&attributes(attributes)
+		block
+
+		+e('p').bisnes-text Для вашего бизнеса
+		+h1-site
+		+h2-app
+		+h3-prototype
+			| Прототипы

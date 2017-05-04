@@ -1,0 +1,72 @@
+.footer-ico
+	position relative
+	display flex
+	cursor pointer
+	justify-content space-between
+
+	&__fb
+		position relative
+		// padding-bottom 100%
+		display block
+		// height 0
+		text-decoration none
+		background-repeat no-repeat
+		background-size contain
+		retinaBackground(fb-default, $ext = 'png')
+
+	&__inst
+		position relative
+		// padding-bottom 100%
+		display block
+		// height 0
+		text-decoration none
+		background-repeat no-repeat
+		background-size contain
+		retinaBackground(inst-default, $ext = 'png')
+
+.footer-ico__fb:hover
+	retinaBackground(fb-hover, $ext = 'png')
+
+.footer-ico__inst:hover
+	retinaBackground(inst-hover, $ext = 'png')
+
+@media only screen and (max-width: 959px)
+	.footer-ico
+		width 20.2vw
+
+		&__fb
+			width 8.5vw
+
+		&__inst
+			width 8.5vw
+
+@media only screen and (min-width: 960px)
+	.footer-ico
+		width 81px
+
+		&__fb
+			width 37px
+
+		&__inst
+			width 37px
+
+@media only screen and (min-width: 1280px)
+	.footer-ico
+
+		&__fb
+			top -1px
+
+		&__inst
+			top -1px
+
+@media only screen and (min-width: 1920px)
+	.footer-ico
+		top 2px
+		width 93px
+
+		&__fb
+			width 40px
+
+		&__inst
+			right 2px
+			width 40px

@@ -1,6 +1,37 @@
+include /blocks/main/main
+include /blocks/holder/holder
+include /blocks/header/header
+
+include /blocks/header-logo/header-logo
+include /blocks/header-title/header-title
+
+include /blocks/body/body
+include /blocks/body-download/body-download
+include /blocks/body-serveice/body-serveice
+
+include /blocks/footer/footer
+include /blocks/footer-text/footer-text
+include /blocks/footer-ico/footer-ico
+
 extends /blocks/layout-default/layout-default
 
 block head
-	- var pageTitle = 'CSSSR Project Template';
+	- var pageTitle = 'Human Interface';
+	- var pageDescription = 'Сайт, мобильное приложение, прототип. Современный дизайн, проработка эргономики и учет ожиданий целевой аудитории сделает проект не только ярким, но и приносящим пользу вашему бизнесу. Спросить: +7 (926) 314 83 30 Заказать: service@humaninterface.pro';
+	- var pageKeywords = 'компания human interface, компания хьюман интерфейс, создание мобильного приложения, разработка сайта, красивый дизайн интерфейсов, разработка прототипа, wireframes, сайт для бизнеса, приложение для бизнеса, графика для компьютерной игры, комфортное сотрудничество, создание интернет-магазина';
 
 block content
+	+main
+		+holder
+
+			+header
+				+header-logo
+				+header-title
+
+			+body
+				+body-download
+				+body-serveice
+
+		+footer
+			+footer-text
+			+footer-ico

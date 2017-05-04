@@ -1,0 +1,9 @@
+mixin body-download()
+	+b('a').body-download&attributes({'href': 'http://humaninterface.pro/assets/files/HI_portfolio.pdf', 'target': '_blank'})
+		block
+
+		+e('div').wrapp-text
+			+e('span').span подробности и наши работы
+			+e('h4').h4-download Скачать презентацию
+		+e('div').download
+			+e('div').download-img
