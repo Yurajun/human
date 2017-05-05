@@ -1,3 +1,5 @@
+include /blocks/icon/icon
+
 mixin body-download()
 	+b('a').body-download&attributes({'href': 'http://humaninterface.pro/assets/files/HI_portfolio.pdf', 'target': '_blank'})
 		block
@@ -6,4 +8,4 @@ mixin body-download()
 			+e('span').span подробности и наши работы
 			+e('h4').h4-download Скачать презентацию
 		+e('div').download
-			+e('div').download-img
+			+icon('pdf-default').download-img

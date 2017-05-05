@@ -6,29 +6,19 @@
 
 	&__fb
 		position relative
-		// padding-bottom 100%
 		display block
-		// height 0
-		text-decoration none
-		background-repeat no-repeat
-		background-size contain
-		retinaBackground(fb-default, $ext = 'png')
+		fill #8e7c58
 
 	&__inst
 		position relative
-		// padding-bottom 100%
 		display block
-		// height 0
-		text-decoration none
-		background-repeat no-repeat
-		background-size contain
-		retinaBackground(inst-default, $ext = 'png')
+		fill #8e7c58
 
 .footer-ico__fb:hover
-	retinaBackground(fb-hover, $ext = 'png')
+	fill #a52615
 
 .footer-ico__inst:hover
-	retinaBackground(inst-hover, $ext = 'png')
+	fill #a52615
 
 @media only screen and (max-width: 959px)
 	.footer-ico
@@ -36,19 +26,25 @@
 
 		&__fb
 			width 8.5vw
+			height 8.55vw
 
 		&__inst
-			width 8.5vw
+			left -.6vw
+			width 8.51vw
+			height 8.55vw
 
 @media only screen and (min-width: 960px)
 	.footer-ico
 		width 81px
 
 		&__fb
-			width 37px
+			width 38px
+			height 38px
 
 		&__inst
-			width 37px
+			left 5px
+			width 38px
+			height 38px
 
 @media only screen and (min-width: 1280px)
 	.footer-ico
@@ -66,7 +62,9 @@
 
 		&__fb
 			width 40px
+			height 42px
 
 		&__inst
 			right 2px
 			width 40px
+			height 42px

@@ -19,12 +19,8 @@
 
 	&__download-img
 		position relative
-		padding-bottom 188.888888888%
-		height 0
-		background-repeat no-repeat
-		background-position 0 0
-		background-size contain
-		retinaBackground(pdf-default, $ext = 'png')
+		fill #6f498c
+
 
 .body-download:hover
 	.body-download__h4-download
@@ -32,7 +28,7 @@
 
 .body-download:hover
 	.body-download__download-img
-		retinaBackground(pdf-hover, $ext = 'png')
+		fill #a52615
 
 @media only screen and (max-width: 959px)
 	.body-download
@@ -48,6 +44,8 @@
 
 		&__download-img
 			left 7%
+			width 100%
+			height 13.8vw
 
 		&__span
 			position absolute
@@ -72,6 +70,10 @@
 		&__download
 			width 30px
 
+		&__download-img
+			width 30px
+			height 50px
+
 		&__span
 			top 20px
 			right 8px
@@ -92,6 +94,10 @@
 
 		&__download
 			width 32px
+
+		&__download-img
+			width 32px
+			height 55px
 
 		&__span
 			top 20px
@@ -114,6 +120,11 @@
 
 		&__download
 			width 41px
+
+		&__download-img
+			top 3px
+			width 41px
+			height 67px
 
 		&__span
 			top 26px

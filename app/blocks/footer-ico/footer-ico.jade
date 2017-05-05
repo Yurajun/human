@@ -3,7 +3,7 @@ include /blocks/icon/icon
 mixin footer-ico()
 	+b.footer-ico&attributes(attributes)
 		block
-
-		+e('a').fb&attributes({'href': 'https://www.facebook.com/humaninterfacepro', 'target': '_blank'})
-		+e('a').inst&attributes({'href': 'https://www.instagram.com/humaninterface.pro', 'target': '_blank'})
-		+e.instw&attributes({'href': 'https://www.instagram.com/humaninterface.pro', 'target': '_blank'})
+		+e('a').fa-a&attributes({'href': 'https://www.facebook.com/humaninterfacepro', 'target': '_blank'})
+			+icon('fb-default').fb
+		+e('a').inst-a&attributes({'href': 'https://www.instagram.com/humaninterface.pro', 'target': '_blank'})
+			+icon('inst-default').inst

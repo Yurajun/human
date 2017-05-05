@@ -6,6 +6,5 @@ $(() => {
 	svg4everybody();
 });
 
-
 import '../blocks/body-serveice/body-serveice';
 import '../blocks/footer/footer';
